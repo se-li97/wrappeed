@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show')
+                });
+            });  
+        </script>
+        <link rel="stylesheet" href="contact.css">
+        <title>Wrapped MultMedia Agency</title>
+    </head>
+    <body>
+        <div id="preloader"></div>
+         <nav>
+             <label class="logo">Wrapped</label>
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AboutUS</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">ContactUS</a></li>
+                <li><a href="#">Feedback</a></li>
+             </ul>
+             <label id="icon">
+                <i class="fas fa-bars"></i>
+             </label>
+         </nav>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/N15XkKvBEpc?si=cXR_dCvWgZRdoBng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        
+         <section>
+            <h1>Contact Us</h1>
+         </section>
+
+        <div class="container">
+            <form onsubmit=" sendEmali(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="email" placeholder="Email ID" required>
+                <input type="text" id="Phone" placeholder="phone number" required>
+                <textarea name="" id="" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+         <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none"; 
+            });
+
+            function sendEmali(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "shawnsempijja23@gmail.com",
+                    Password : "sprinkles@2023",
+                    To : 'sempijjashawn98@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Enquirise",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+
+         </script>
+
+       
+        
+        
+    
+</body>
+</html>

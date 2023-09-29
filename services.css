@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Monseratt', sans-serif;
+    min-height: 100vh;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+    
+}
+
+nav a:hover{
+    border: 1px solid white;
+}
+
+nav #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px; 
+
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    nav a:hover{
+        border: none;
+        color: #3498db;
+
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}
+
+#preloader{
+    background: #000 url(Images/ben-redblock-loading.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+iframe{
+    display: none;
+}
+
+section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background: url(Images/take\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section{
+    width: 100%;
+    background: #809faa;
+    height: 600px;
+}
+
+.title h2{
+text-align: center;
+padding-top: 50px;
+font-size: 42px;
+}
+
+.title h2::after{
+content: "";
+height: 4px;
+width: 230px;
+background-color: #000;
+display: block;
+margin: auto;
+}
+
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px 20px;
+    background: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background: #b8d4de;
+    transition: 0.4s ease;
+}
+
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+
+.card h3{
+    font-size: 28px;
+    color: #c94f4f;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #2c677c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    background: #c94f4f;
+    transition: 0.4s ease;
+}
+
+@media screen and (max-width: 948px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0;
+    }
+}
